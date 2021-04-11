@@ -82,6 +82,10 @@
     cursor: pointer;
 }
 
+.no-decoration{
+    text-decoration: none;
+}
+
 .sign-in-eula{
     font-size: 0.7em;
 
