@@ -497,4 +497,95 @@ svg{
 }
 
 
+.virtualq-select{
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ebebeb;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    height: 50px;
+}
 
+.time-slot{
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.virtualq-card-container{
+    padding-left: 40px;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-end;
+    align-items: center;
+    height: 250px;
+}
+
+.virtualq-buttons-container{
+    padding-left: 40px;
+    position: relative;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 352px;
+    align-self: center;
+}
+
+.slot-details{
+    position: absolute;
+    height: 90px;
+    width: 402px;
+    margin-bottom: -20px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.51) 0%, rgba(255, 255, 255, 0.65) 100%);
+    backdrop-filter: blur(15px);
+
+    padding: 0 40px;
+
+    display: flex;
+    align-items: center;
+}
+
+.time-slot-header{
+    margin: 20px 0;
+    margin-top: 40px;
+}
+
+.time-slot{
+    margin-bottom: 40px;
+}
+
+.slot-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.slot-detail{
+    display: flex;
+    flex-direction: column;
+}
+
+.slot-detail > div:first-child{
+    font-size: 12px;
+}
+
+.slot-detail:last-child{
+    align-items: flex-end;
+}
+
+.disabled{
+    opacity: 0.5;
+}
+
+.red-btn{
+    background-color: rgb(255, 65, 65);
+    color: white;
+}

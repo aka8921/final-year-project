@@ -3,39 +3,209 @@
 
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./home.css">
         <link rel="stylesheet" href="./main.css">
-        <link rel="stylesheet" href="./signIn.css">
-        <title>Sign In</title>
+        <title>Virtual Card</title>
     </head>
 
     <body>
-        <main class="container">
-            <div class="sign-in-component">
-                <div class="sign-in-component-header">
-                    <div>
-                        Sign In
-                    </div>
-                    <div>
-                        Don't have a ration card ? <a href="#">apply now</a>
-                    </div>
-                </div>
-                <div class="sign-in-inputs">
-                    <input type="text" placeholder="Ration Card N.O">
-                    <input type="password" placeholder="Password">
-                    <a href="./home.html" class="no-decoration">
-                        <div class="sign-in-button">
-                            Sign In
+        <div class="wrapper">
+            <div class="main-section">
+                <div class="main-header">
+                    <div class="main-header-logo">
+                        <!-- <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M46 12C46 17.2632 45.8421 25.305 43.5 30C41.1579 34.695 38.6786 37.887 34.5 41C30.3214 44.113 27.6128 45.141 22.5 46C17 46 17.5 46 12 46V12H46Z"
+                                fill="#1C1D28" />
+                            <circle cx="16.5" cy="16.5" r="16.5" fill="#00DD32" />
+                        </svg> -->
+                        <div>
+                            Logo
                         </div>
-                    </a>
+                    </div>
+
+                    <input type="text" placeholder="Search">
+
                 </div>
-                <div class="sign-in-eula">
-                    <input type="checkbox" name="" id=""> <span>I have read and agreed to the <a href="#">Terms &
-                            Conditions</a></span>
+
+                <div class="content-box">
+                    <div class="content-left">
+                        <div class="content-header">
+                            <div>
+                                Book a slot
+                            </div>
+                            <div>
+                                For the smooth purchase of your ration. please book a virtual queue slot 
+                            </div>
+                        </div>
+
+                        <select name="cars" id="cars" class="virtualq-select">
+                            <option value="volvo">Thalassery</option>
+                            <option value="saab">Moozhikkara</option>
+                            <option value="mercedes">Chirakkara</option>
+                            <option value="audi">Kadirur</option>
+                        </select>
+                        
+                        <div class="content-header time-slot-header">
+                            <div>
+                                Time Slot
+                            </div>
+                            <div>
+                                Enter a timeslot for your booking
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="time-slot">
+                            <div class="time-slot-item">
+                                <input type="radio" id="1" name="gender" value="male">
+                                <label for="1">9:00 - 10:00</label><br>
+                            </div>
+                            <div class="time-slot-item">
+                                <input type="radio" id="2" name="gender" value="male">
+                                <label for="2">10:00 - 11:00</label><br>
+                            </div>
+                            <div class="time-slot-item">
+                                <input type="radio" id="3" name="gender" value="male">
+                                <label for="3">11:00 - 12:00</label><br>
+                            </div>
+                            <div class="time-slot-item">
+                                <input type="radio" id="4" name="gender" value="male">
+                                <label for="4">12:00 - 13:00</label><br>
+                            </div>
+                            <div class="time-slot-item">
+                                <input type="radio" id="5" name="gender" value="male">
+                                <label for="5">13:00 - 14:00</label><br>
+                            </div>
+                            <div class="time-slot-item">
+                                <input type="radio" id="6" name="gender" value="male">
+                                <label for="6">14:00 - 15:00</label><br>
+                            </div>
+                            <div class="time-slot-item">
+                                <input type="radio" id="7" name="gender" value="male">
+                                <label for="7">15:00 - 16:00</label><br>
+                            </div>
+                        </div>
+
+                        <div class="button blue-btn">
+                            Submit
+                        </div>
+
+                        
+                    </div>
+                    <div class="content-right">
+                        <div class="content-right-header">
+                            <div class="content-header">
+                                <div>
+                                    Your Bookings
+                                </div>
+                                <div>
+                                    Info of your current bookings
+                                </div>
+                            </div>
+                        </div>
+                        <div class="virtualq-card-container">
+                            <div class="card">
+                                <div class="main-header-logo">
+                                    <!-- <svg width="46" height="46" viewBox="0 0 46 46" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M46 12C46 17.2632 45.8421 25.305 43.5 30C41.1579 34.695 38.6786 37.887 34.5 41C30.3214 44.113 27.6128 45.141 22.5 46C17 46 17.5 46 12 46V12H46Z"
+                                                                    fill="white" />
+                                                                <circle cx="16.5" cy="16.5" r="16.5" fill="#00DD32" />
+                                                            </svg> -->
+                                    <div>
+                                        Vighnesh S
+                                    </div>
+                                </div>
+                        
+                                <div class="card-number">
+                                    <div>
+                                        123
+                                    </div>
+                        
+                                    <div>
+                                        567
+                                    </div>
+                        
+                                    <div>
+                                        123
+                                    </div>
+                        
+                                    <div>
+                                        567
+                                    </div>
+                                </div>
+                        
+                                <div class="card-meta">
+                                    <div>
+                                        APL
+                                    </div>
+                                    <div>
+                                        Kerala
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slot-details">
+                                <div class="slot-detail">
+                                    <div>
+                                        Shop
+                                    </div>
+                                    <div>
+                                        Thalassery
+                                    </div>
+                                </div>
+                                <div class="slot-detail">
+                                    <div>
+                                        Time
+                                    </div>
+                                    <div>
+                                        11:00 - 12:00
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="buttons virtualq-buttons-container">
+                            <div class="button">
+                                Print
+                            </div>
+                        
+                            <div class="button red-btn">
+                                Delete Slot
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </main>
+            <div class="right-nav">
+                <div class="right-nav-profile">
+                    <div class="right-nav-profile-avatar">
+
+                    </div>
+                    <div class="right-nav-profile-name">
+                        Vighnesh S
+                    </div>
+                </div>
+
+                <div class="right-nav-menus">
+                    <div class="right-nav-menu-item right-nav-active-menu-item">
+                        Home
+                    </div>
+                    <div class="right-nav-menu-item">
+                        Virtual Queue
+                    </div>
+                    <div class="right-nav-menu-item">
+                        Settings
+                    </div>
+                    <div class="right-nav-menu-item">
+                        Feedback
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 
 </html>
